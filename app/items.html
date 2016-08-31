@@ -1,0 +1,5 @@
+<ul>
+  <li ng-repeat="(itemId, item) in items">
+    <a href="#/item/{{itemId}}">{{item.name}}</a> | [<span style="cursor:pointer"><a ng-if="!kept(itemId)" ng-click="keep(itemId)">keep</a><a ng-if="kept(itemId)" ng-click="drop(itemId)">drop</a></span>]
+  </li>
+</ul>

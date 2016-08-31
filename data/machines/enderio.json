@@ -1,0 +1,25 @@
+{
+  "sag_mill": {
+    "name": "SAG Mill",
+    "makes": 1,
+    "reusable": true,
+    "ingredients": {
+      "flint": 3,
+      "iron_ingot": 4,
+      "piston": 1,
+      "machine_chassis": 1
+    }
+  },
+
+  "alloy_smelter": {
+    "name": "Alloy Smelter",
+    "makes": 1,
+    "reusable": true,
+    "ingredients": {
+      "furnace": 3,
+      "machine_chassis": 1,
+      "iron_ingot": 4,
+      "cauldron": 1
+    }
+  }
+}

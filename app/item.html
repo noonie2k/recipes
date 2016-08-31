@@ -1,0 +1,28 @@
+<div>{{item.name}}</div>
+
+<div>
+  <div>Required</div>
+  <ul>
+    <li ng-repeat="(item, quantity) in recipe.required">{{quantity}}x {{item}}</li>
+  </ul>
+</div>
+
+<div>
+  <div>Leftover</div>
+  <ul>
+    <li ng-repeat="(item, quantity) in recipe.leftover">{{quantity}}x {{item}}</li>
+  </ul>
+</div>
+
+<div>
+  <div>Tree</div>
+  <script type="text/ng-template" id="recipeTree">
+    {{item.name}}
+    <ul ng-if="item.recipe">
+      <li ng-repeat="item in item.recipe" ng-include="'recipeTree'"></li>
+    </ul>
+  </script>
+  <ul>
+    <li ng-repeat="item in item.recipe" ng-include="'recipeTree'"></li>
+  </ul>
+</div>

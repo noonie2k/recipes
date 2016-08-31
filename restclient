@@ -1,0 +1,21 @@
+# -*- restclient -*-
+
+#
+# Get all Items
+#
+GET http://localhost:8080/api/items
+Content-Type: application/json
+
+#
+# Get an Item
+#
+GET http://localhost:8080/api/item/stick
+Content-Type: application/json
+
+#
+# Get a Recipe
+#
+POST http://localhost:8080/api/recipe/energy_conduit
+Content-Type: application/json
+{
+}

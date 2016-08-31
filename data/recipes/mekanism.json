@@ -1,0 +1,30 @@
+{
+  "basic_control_circuit": {
+    "name": "Basic Control Circuit",
+    "makes": 1,
+    "ingredients": {
+      "redstone_dust": 1,
+      "osmium_ingot": 1
+    }
+  },
+
+  "steel_ingot": {
+    "name": "Steel Ingot",
+    "makes": 1,
+    "ingredients": {
+      "metallurgic_infuser": 1,
+      "iron_ingot": 1,
+      "coal": 2
+    }
+  },
+
+  "steel_casing": {
+    "name": "Steel Casing",
+    "makes": 1,
+    "ingredients": {
+      "osmium_ingot": 1,
+      "steel_ingot": 4,
+      "glass": 4
+    }
+  }
+}

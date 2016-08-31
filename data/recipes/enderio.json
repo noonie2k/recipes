@@ -1,0 +1,59 @@
+{
+  "machine_chassis": {
+    "name": "Machine Chassis",
+    "makes": 1,
+    "ingredients": {
+      "iron_bar": 4,
+      "iron_ingot": 4,
+      "basic_capacitor": 1
+    }
+  },
+
+  "basic_capacitor": {
+    "name": "Basic Capacitor",
+    "makes": 1,
+    "ingredients": {
+      "redstone_dust": 2,
+      "copper_ingot": 1,
+      "gold_nugget": 4
+    }
+  },
+
+  "energy_conduit": {
+    "name": "Energy Conduit",
+    "makes": 8,
+    "ingredients": {
+      "conduit_binder": 6,
+      "conductive_iron": 3
+    }
+  },
+
+  "binder_composite": {
+    "name": "Binder Composite",
+    "makes": 8,
+    "ingredients": {
+      "gravel": 6,
+      "sand": 2,
+      "clay_block": 1
+    }
+  },
+
+  "conduit_binder": {
+    "name": "Conduit Binder",
+    "makes": 4,
+    "ingredients": {
+      "alloy_smelter": 1,
+      "binder_composite": 1
+    }
+  },
+
+  "conductive_iron": {
+    "name": "Conductive Iron",
+    "makes": 1,
+    "ingredients": {
+      "alloy_smelter": 1,
+      "iron_ingot": 1,
+      "redstone_dust": 1
+    }
+  }
+}

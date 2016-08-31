@@ -1,0 +1,85 @@
+{
+  "wooden_plank": {
+    "name": "Wooden Plank",
+    "makes": 4,
+    "ingredients": {
+      "wood": 1
+    }
+  },
+
+  "stick": {
+    "name": "Stick",
+    "makes": 4,
+    "ingredients": {
+      "wooden_plank": 2
+    }
+  },
+
+  "glass": {
+    "name": "Glass",
+    "makes": 1,
+    "ingredients": {
+      "sand": 1
+    }
+  },
+
+  "iron_pickaxe": {
+    "name": "Iron Pickaxe",
+    "makes": 1,
+    "ingredients": {
+      "stick": 2,
+      "iron_ingot": 3
+    }
+  },
+
+  "iron_bar": {
+    "name": "Iron Bar",
+    "makes": 16,
+    "ingredients": {
+      "iron_ingot": 6
+    }
+  },
+
+  "cauldron": {
+    "name": "Cauldron",
+    "makes": 1,
+    "ingredients": {
+      "iron_ingot": 7
+    }
+  },
+
+  "clay_block": {
+    "name": "Clay Block",
+    "makes": 1,
+    "ingredients": {
+      "clay": 4
+    }
+  },
+
+  "gold_nugget": {
+    "name": "Gold Nugget",
+    "makes": 9,
+    "ingredients": {
+      "gold_ingot": 1
+    }
+  },
+
+  "piston": {
+    "name": "Piston",
+    "makes": 1,
+    "ingredients": {
+      "wooden_plank": 3,
+      "redstone_dust": 1,
+      "iron_ingot": 1,
+      "cobblestone": 4
+    }
+  },
+
+  "furnace": {
+    "name": "Furnace",
+    "makes": 1,
+    "ingredients": {
+      "cobblestone": 8
+    }
+  }
+}

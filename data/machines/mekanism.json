@@ -1,0 +1,25 @@
+{
+  "metallurgic_infuser": {
+    "name": "Metallurgic Infuser",
+    "makes": 1,
+    "reusable": true,
+    "ingredients": {
+      "osmium_ingot": 1,
+      "iron_ingot": 4,
+      "redstone_dust": 2,
+      "furnace": 2
+    }
+  },
+
+  "enrichment_chamber": {
+    "name": "Enrichment Chamber",
+    "makes": 1,
+    "reusable": true,
+    "ingredients": {
+      "redstone_dust": 4,
+      "iron_ingot": 2,
+      "basic_control_circuit": 2,
+      "steel_casing": 1
+    }
+  }
+}
