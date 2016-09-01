@@ -12,8 +12,6 @@ var data map[string]*Item
 func main() {
 	data = ReadData()
 
-	fmt.Println(GetEnvPort())
-
 	router := NewRouter()
 	router.PathPrefix("/").Handler(http.FileServer(http.Dir("./app/")))
 
