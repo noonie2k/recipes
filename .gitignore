@@ -1,2 +1,3 @@
 /recipes
 /.docker_build/
+/vendor/github.com
