@@ -1,12 +1,16 @@
 {
+  "blaze_rod":     { "name": "Blaze Rod" },
   "clay":          { "name": "Clay" },
   "coal":          { "name": "Coal" },
   "cobblestone":   { "name": "Cobblestone" },
+  "ender_pearl":   { "name": "Ender Pearl" },
   "flint":         { "name": "Flint" },
   "gold_ingot":    { "name": "Gold Ingot" },
   "gravel":        { "name": "Gravel" },
   "iron_ingot":    { "name": "Iron Ingot" },
+  "nether_quartz": { "name": "Nether Quartz" },
   "redstone_dust": { "name": "Redstone Dust" },
   "sand":          { "name": "Sand" },
+  "slimeball":     { "name": "Slimeball" },
   "wood":          { "name": "Wood" }
 }

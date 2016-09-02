@@ -75,11 +75,37 @@
     }
   },
 
+  "sticky_piston": {
+    "name": "Sticky Piston",
+    "makes": 1,
+    "ingredients": {
+      "piston": 1,
+      "slimeball": 1
+    }
+  },
+
   "furnace": {
     "name": "Furnace",
     "makes": 1,
     "ingredients": {
       "cobblestone": 8
+    }
+  },
+
+  "eye_of_ender": {
+    "name": "Eye of Ender",
+    "makes": 1,
+    "ingredients": {
+      "ender_pearl": 1,
+      "blaze_powder": 1
+    }
+  },
+
+  "blaze_powder": {
+    "name": "Blaze Powder",
+    "makes": 2,
+    "ingredients": {
+      "blaze_rod": 1
     }
   }
 }
