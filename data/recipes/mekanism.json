@@ -26,5 +26,14 @@
       "steel_ingot": 4,
       "glass": 4
     }
+  },
+
+  "basic_universal_cable": {
+    "name": "Basic Universal Cable",
+    "makes": 8,
+    "ingredients": {
+      "steel_ingot": 2,
+      "redstone_dust": 1
+    }
   }
 }

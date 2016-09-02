@@ -14,7 +14,7 @@ func ItemIndex(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusOK)
 
-	if err := json.NewEncoder(w).Encode(data); err != nil {
+	if err := json.NewEncoder(w).Encode(dataList); err != nil {
 		panic(err)
 	}
 }
@@ -78,6 +78,52 @@ func RecipeShow(w http.ResponseWriter, r *http.Request) {
 
 	} else {
 		w.WriteHeader(http.StatusNotFound)
+	}
+}
+
+func BuildShow(w http.ResponseWriter, r *http.Request) {
+
+	var requestBody map[string]map[string]int
+
+	body, err := ioutil.ReadAll(io.LimitReader(r.Body, 1048576))
+
+	if err != nil {
+		panic(err)
+	}
+
+	if err := json.Unmarshal(body, &requestBody); err != nil {
+		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+
+		// if err := json.NewEncoder(w).Encode(err); err != nil {
+		// 	panic(err)
+		// }
+	}
+
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+	w.WriteHeader(http.StatusOK)
+
+	list := List{}
+
+	for itemId, quantity := range requestBody["existingItems"] {
+		for i := 0; i < quantity; i++ {
+			list.leftover = append(list.leftover, data[itemId])
+		}
+	}
+
+	for itemId, quantity := range requestBody["requiredItems"] {
+
+		for i := 0; i < quantity; i++ {
+			list = Recipe(data[itemId], list)
+		}
+	}
+
+	result := map[string]map[string]int{
+		"required": count_items(list.required),
+		"leftover": count_items(list.leftover),
+	}
+
+	if err := json.NewEncoder(w).Encode(result); err != nil {
+		panic(err)
 	}
 }
 

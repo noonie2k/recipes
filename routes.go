@@ -17,4 +17,5 @@ var routes = Routes{
 	Route{"RecipeShow", "GET", "/api/recipe/{itemId}", RecipeShow},
 	Route{"RecipeShow", "POST", "/api/recipe/{itemId}", RecipeShow},
 	Route{"ReusableIndex", "GET", "/api/items/reusable", ReusableIndex},
+	Route{"BuildShow", "POST", "/api/build", BuildShow},
 }

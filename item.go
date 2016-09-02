@@ -1,6 +1,7 @@
 package main
 
 type Item struct {
+	Identifier  string         `json:"id"`
 	Name        string         `json:"name"`
 	Makes       int            `json:"makes"`
 	Reusable    bool           `json:"reusable"`

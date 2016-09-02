@@ -19,3 +19,22 @@ POST http://localhost:8080/api/recipe/energy_conduit
 Content-Type: application/json
 {
 }
+
+#
+# Get a build
+#
+POST http://localhost:8080/api/build
+Content-Type: application/json
+{
+  "existingItems": {
+    "seared_bricks": 7,
+    "conductive_iron": 2
+  },
+
+  "requiredItems": {
+    "energy_conduit": 4,
+    "seared_bricks": 18,
+    "smeltery_controller": 2,
+    "casting_table": 1
+  }
+}

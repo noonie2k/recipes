@@ -1,0 +1,54 @@
+{
+  "grout": {
+    "name": "Grout",
+    "makes": 8,
+    "ingredients": {
+      "sand": 4,
+      "gravel": 4,
+      "clay_block": 1
+    }
+  },
+  "seared_brick": {
+    "name": "Seared Brick",
+    "makes": 1,
+    "ingredients": {
+      "grout": 1
+    }
+  },
+  "seared_bricks": {
+    "name": "Seared Bricks",
+    "makes": 1,
+    "ingredients": {
+      "seared_brick": 4
+    }
+  },
+  "smeltery_controller": {
+    "name": "Smeltery Controller",
+    "makes": 1,
+    "ingredients": {
+      "seared_brick": 8
+    }
+  },
+  "smeltery_drain": {
+    "name": "Smeltery Drain",
+    "makes": 1,
+    "ingredients": {
+      "seared_brick": 6
+    }
+  },
+  "casting_table": {
+    "name": "Casting Table",
+    "makes": 1,
+    "ingredients": {
+      "seared_brick": 7
+    }
+  },
+  "seared_tank": {
+    "name": "Seared Tank",
+    "makes": 1,
+    "ingredients": {
+      "seared_brick": 8,
+      "glass": 1
+    }
+  }
+}

@@ -21,16 +21,28 @@ angular.module('RecipesApp')
 
         return $http(request)
           .then(function(response) {
-            console.log(response.data);
             return response.data;
           });
       },
 
-      getRecipe: function getRecipes(itemId, existingItems = {}) {
+      getRecipe: function (itemId, existingItems = {}) {
         var request = {
           method: 'POST',
           url: '/api/recipe/' + itemId,
           data: existingItems
+        };
+
+        return $http(request)
+          .then(function(response) {
+            return response.data;
+          });
+      },
+
+      calculateBuild: function(build) {
+        var request = {
+          method: 'POST',
+          url: '/api/build',
+          data: build
         };
 
         return $http(request)

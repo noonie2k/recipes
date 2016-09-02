@@ -8,9 +8,15 @@ import (
 )
 
 var data map[string]*Item
+var dataList []*Item
 
 func main() {
 	data = ReadData()
+
+	for itemId, item := range data {
+		item.Identifier = itemId
+		dataList = append(dataList, item)
+	}
 
 	router := NewRouter()
 	router.PathPrefix("/").Handler(http.FileServer(http.Dir("./app/")))
